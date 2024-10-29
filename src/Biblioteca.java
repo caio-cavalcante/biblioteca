@@ -14,7 +14,14 @@ public class Biblioteca {
             System.out.println("4. Buscar livro");
             System.out.println("5. Sair");
             System.out.print("Escolha uma opção: ");
-            opcao = scanner.nextInt();
+
+            try {
+                opcao = scanner.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Informe um número!");
+                scanner.nextLine();
+                continue;
+            }
 
             switch (opcao) {
                 case 1:

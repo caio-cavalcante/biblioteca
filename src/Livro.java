@@ -11,7 +11,6 @@ public class Livro extends ItemBiblioteca {
 
     public Livro(Autor autor, Categoria categoria, String titulo) {
         super(titulo);
-        super.setTitulo(titulo);
         this.autor = autor;
         this.categoria = categoria;
     }

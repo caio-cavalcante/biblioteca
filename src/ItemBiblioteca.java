@@ -6,11 +6,7 @@ abstract class ItemBiblioteca {
     }
 
     public String getTitulo() {
-        return this.titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+        return titulo;
     }
 
     public abstract void mostrarDetalhes();
